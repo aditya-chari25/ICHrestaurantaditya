@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+<head>
+ <title>Indian Cuisine House</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+ <style>
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: white;}
+
+
+
+.rev{
+  font-size:20px;
+  font-weight:bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:black;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid rgb(206, 204, 204);
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: purple;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: blue;
+}
+input[type=text1]:hover{
+  border-color:blue;
+  background-color:rgb(250, 249, 250);}
+ 
+  input[type=text1], select, textarea {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid rgb(223, 16, 16);
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+.price{
+  color:Red;
+  font-weight:bold;
+  font-size:30px;
+}
+.veg{
+  margin-right: 1px;
+  margin-left: 70%;
+}
+.nonveg{
+  margin-left:60%
+}
+.align {
+  text-align:right;
+  color:blue;
+  border:2px solid blue;
+  border-radius:10px;
+  margin-left:60px
+}
+.align:hover{
+  color:green;
+  border:2px solid green;
+  border-radius:10px;
+}
+div.background {
+  background: url(souththali.png) ;
+  border: 2px solid purple;
+}
+div.breakfast{
+  background: url(teplabreakfast2.png);
+}
+.margin{
+  margin-top:0px;
+}
+
+div.transbox {
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 2%;
+  font-weight: bold;
+  color: #1131e7;
+}
+
+#specialities{
+  margin-top :70px;
+   background-color: rgb(250, 249, 249);
+   text-align:center;
+   font-size:35px;
+   font-weight:bold;
+}
+#recommendation{
+  margin-top :70px;
+   background-color: rgb(240, 234, 234);
+   text-align:center;
+   font-size:35px;
+   font-weight:bold;
+
+}
+
+#review{
+  margin-top :70px;
+   background-color: rgb(240, 234, 234);
+   text-align:center;
+   font-size:35px;
+   font-weight:bold;
+
+}
+#footer{
+  margin-top :70px;
+   background-color: #333;
+   text-align:left;
+   font-size:20px;
+   font-weight:lighter;
+   padding: 10px 0;
+   color:#fff;;
+
+}
+
+
+.row{
+    display:flex;
+    background-color:white;
+    flex-wrap:wrap;
+}
+
+.row1{
+    display:flex;
+    background-color:rgb(250, 249, 249);
+    flex-wrap:wrap;
+}
+.leftside{
+   flex:35%;
+   background-color:white;
+   padding:30px;
+}
+.leftside1{
+  flex:25%;
+  max-width: 25%;
+  padding: 0 4px;
+  border:1px solid black;
+  margin-left:80px;
+  flex-grow: 1;
+  border-radius: 10px;  
+  margin-top:30px;
+  margin-bottom: 30px;
+  transition:0.5s;
+}
+
+.leftside1:hover{
+  flex-grow:4;
+  max-width:30%;
+}
+
+
+.rightside1{
+  flex:25%;
+  max-width: 25%;
+  padding: 0 4px;
+  border:1px solid black;
+  margin-left:160px;
+  border-radius: 10px;  
+  margin-top:30px;
+  margin-bottom: 30px;
+  transition:0.5s;
+}
+
+.rightside1:hover{
+  flex-grow:4;
+  max-width:30%;
+}
+
+
+.leftside2{
+  flex:40%;
+  max-width: 40%;
+  padding: 0 4px;
+  border:1px solid black;
+  margin-left:80px;
+  border-radius: 10px;  
+}
+
+
+.rightside{
+    flex:65%;
+    padding:30px;
+}
+.navbar {  
+  display: flex;
+  background-color: white;
+}
+
+#purple{
+  color:purple;
+  font-size:20px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: rgb(160, 57, 160);
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: right;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:20px;
+  margin-left: 30px;
+
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:rgb(146, 23, 146);
+  color:white;
+}
+#sizem{
+  font-size:45px;
+  font-weight: bold;
+}
+#sizeh{
+  padding-left:180px;
+  font-size:20px;
+  font-weight:bold;
+}
+#topi{
+  background-color: white;
+}
+ </style>
+ <body>
+   
+
+<div class = "row">
+    <div class = "leftside">
+    <img src = "restlogo.png" style="width:250px;height:90px;">
+    
+    </div>
+    <div class="main" id="topi"></div>
+<div class = "rightside">
+<div class = "navbar">
+    <a href="#specialities">Specialities</a>
+    <a href="#recommendation">Our recommendation</a>
+    <a href="#review">Customer Reviews</a>
+    <a href="#footer">Contact Us</a>
+</div>
+
+</div>
+</div>
+<div class ="row">
+  <div class = "leftside">
+    <p id ="sizem">Jo khaana se kare pyaar, woh ICH se kaise kare inkaar</p>
+    <p id ="sizeh"> Check out our history here-></p>
+    </div>
+    <div class = "rightside">
+<div class="background">
+    <div class="transbox">
+      <h1>History of the restaurant</h1>
+      <p id="purple" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sed a in ab adipisci itaque, ea delectus magni minus, eveniet velit error nisi quae omnis incidunt earum? Dolor quod vero, sunt nihil corrupti ipsa sapiente nesciunt quae! Assumenda alias quo ducimus blanditiis est repudiandae ex nemo, quia deleniti libero id dolorem, laboriosam eum quasi magni voluptate accusantium ut perferendis? Accusamus facilis magnam atque modi, consequuntur voluptates sit soluta, aliquid nam itaque expedita fuga! In consectetur quam illo incidunt vel nobis ducimus possimus cumque cum expedita, necessitatibus deleniti tempore ex enim voluptas corporis ipsam quisquam accusamus reprehenderit labore explicabo totam saepe!.</p>
+
+  </div>
+  </div>
+  </div>
+</div>
+
+
+  <div class = "main" id="specialities">SPECIALITIES</div>
+<div class = "row1">
+  <div class = "leftside1">
+ 
+    <img src ="dosabreakfast.png" width = 90% height = 50% >
+   
+ 
+
+    <p style="font-style:italic;font-family:cursive;">Masala Dosa with trio of chutnies<span class="align">Add +</span></p>
+    <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">This dish consist of a crisp masala dosa with three exquisite chutnies (green, coconut and tomato).</p>
+    <p><span class = "price">-120</span><span class ="veg" style="color:green">VEG</span></p>
+   </div>
+ <div class ="leftside1">
+<img src="kabab.png" width =100% height =50% style="margin-top:2px">
+<p style="font-style:italic;font-family:cursive;">Hot Crispy ICH Seekh kabab  <span class="align" style="margin-left:80px">Add +</span></p>
+<p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Succulent kebabs made with minced lamb, marinated in variety of spices, grilled on a tandoor/oven and served with green chutney.Served with mint chutney and a side of onion rings and lemon wedges</p>
+<p><span class = "price">-250</span><span class ="veg" style="color:green">VEG</span></p>
+</div>
+
+<div class ="leftside1">
+  <img src="shahipaneer.png" width =100% height= 50%>
+  <p style="font-style:italic;font-family:cursive;"> Punjabi shahi paneer <span class="align" style="margin-left:140px">Add +</span> </p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Punjabi shahi paneer Deliciously flavorful, aromatic, rich, creamy paneer gravy made using rich ingredients like almonds or cashews , cardamom, saffron and it is served with roti/naan.</p>
+  <p><span class = "price">-310</span><span class ="veg" style="color:green">VEG</span></p>
+</div>
+
+</div>
+<div class ="row1">
+  <div class = "rightside1" style="margin-left:200px">
+  <img src="Chickenbiryani.png" width =100% height =50% style="margin-top:5px">
+  <p style="font-style:italic;font-family:cursive;"> Chicken Biryani <span class ="align" style="margin-left:170px">Add+</span></p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Chicken Biryani is a savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together with tender texture and rich flavor </p>
+  <p><span class = "price">-290</span><span class ="nonveg" style="color:red">NON-VEG</span></p>
+</div>
+<div class ="rightside1" style="margin-left:200px">
+  <img src="cheesecake.png" width =100% height =50% style ="margin-top:5px">
+  <p style="font-style:italic;font-family:cursive;"> Signature Cheesecake <span class ="align" style="margin-left:140px">Add+</span></p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif"> A luscious, rich and sweet cheesecake dessert where texture can vary greatly-from light and airy to dense and rich to smooth and creamy</p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Comes in three flavours- Blueberry, Strawberry and Chocolate</p>
+  <p><span class = "price">-250</span><span class ="veg" style="color:green">VEG</span></p>
+</div>
+
+
+</div>
+
+<div class = "main" id="recommendation">OUR RECOMMENDATIONS</div>
+<label for="sitem" style="color:purple;font-style:normal;font-weight:bold;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Search</label>
+  <input type="text1" id="sitem" name="searchitem" placeholder="Type item name....">
+<div class ="row1">
+
+<div class ="leftside1">
+<p style ="font-weight:bold;font-size:30px;color:red">BEST SELLER</p>
+<img src ="dalmakhani.png" width=100% height:40%>
+<p style="font-style:italic;font-family:cursive;"> Dal Makhani <span class ="align" style="margin-left:220px">Add+</span></p>
+<p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">It is a popular dish of punjab. Slow cooked whole black lentil and red kidney beans along with various indian spices. It is eaten along with naan/roti.</p>
+<p><span class = "price">-250</span><span class ="veg" style="color:green">VEG</span></p>
+</div>
+
+<div class ="leftside1">
+<p style ="font-weight:bold;font-size:30px;color:red">BEST FOOD AWARD</p>
+<img src ="paneertikka.png" width=100% height:40% style="border-radius:10px">
+<p style="font-style:italic;font-family:cursive;"> Paneer Tikka Masala <span class ="align" style="margin-left:150px">Add+</span></p>
+<p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif"> Paneer a firm, non-melting cheese a firm, non-melting cheese a firm, non-melting cheese with many spices mixed giving a fabulous taste and flavour</p>
+<p><span class = "price">-260</span><span class ="veg" style="color:green">VEG</span></p>
+</div>
+
+<div class ="leftside1">
+  <p style ="font-weight:bold;font-size:30px;color:red">MOST PREFERRED STARTER</p>
+  <img src="gobimanchurian.png" width=100% height:50% style="border-radius:10px">
+  <p style="font-style:italic;font-family:cursive;"> Gobi Manchurian <span class="align" style="margin-left:170px">Add +</span></p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Gobi Manchurian is a popular Indo-Chinese dish where crispy cauliflower florets are tossed in a manchurian sauce. It can be eaten  with rice or noodles which can be asked as well seperately.</p>
+  <p><span class = "price">-190</span><span class ="veg" style="color:green">VEG</span></p>
+  
+</div>
+</div>
+
+<div class ="row1">
+
+  <div class ="leftside1" >
+    <p style ="font-weight:bold;font-size:30px;color:red">MAJESTIC SOUTH INDIAN THALI</p>
+    <img src="souththali.png" width=100% height:50% style="border-radius:10px">
+    <span class="align" style="margin-left:300px">Add +</span>
+    <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Typical dishes include rice, dal, vegetables, roti, papad, dahi (yogurt), small amounts of chutney or pickle, and a sweet dish to top it off.</p>
+    <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Whatever is served the quantity can be adjusted by the customer. Sweet dish such as ice-cream or kulfi are available.</p>
+    <p><span class = "price">-350</span><span class ="veg" style="color:green">VEG</span></p>
+  </div>
+
+  <div class ="leftside1">
+    <p style ="font-weight:bold;font-size:30px;color:red">EXQUISITE NORTH INDIAN THALI</p>
+    <img src="norththali.png" width=100% height:50% style="border-radius:10px">
+    <span class="align" style="margin-left:300px">Add +</span>
+    <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Tasty dishes like dal makhani, paneer gravy/ shahi paneer, masala chaas, lassi, channa masala, bhoondi raitha, papad, jeera rice</p>
+    <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">And to top it off desserts like ice-cream, kulfi, gajar halwa, basundi, badusha (1 of them) is also available. </p>
+    <p><span class = "price">-350</span><span class ="veg" style="color:green">VEG</span></p>
+  </div>
+
+ <div class ="leftside1">
+  <p style ="font-weight:bold;font-size:30px;color:red">FOR MUTTON BIRYANI LOVERS</p>
+  <img src="muttonbiryani.png" width=100% height:50% style="border-radius:10px">
+  <p style="font-style:italic;font-family:cursive;"> Hyderabadi mutton biryani <span class="align" style="margin-left:90px">Add +</span></p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Hyderabadi mutton biryani is a classic dish made by layering rice over slow cooked mutton gravy.Host of spices and herbs such as star anise, bay leaves, cardamom, cinnamon, cloves, jaiphal, javitri along with chillies, rose water, kewda and saffron cooked with succulent mutton pieces.</p>
+  <p><span class = "price">-290</span><span class ="veg" style="color:green">VEG</span></p>
+ </div>
+</div>
+
+<div class ="row1">
+
+<div class ="rightside1" style ="margin-left:200px">
+  <p style ="font-weight:bold;font-size:30px;color:red">FOR PARATHA AND PANEER LOVERS</p>
+  <img src="paneerparatha.png" width=100% height:50% style="border-radius:10px">
+  <p style="font-style:italic;font-family:cursive;"> Paneer Paratha <span class="align" style="margin-left:170px">Add +</span></p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Paneer paratha is a popular Indian flatbread made with whole wheat flour and cottage cheese stuffing. Paneer paratha is one of the many popular paratha varieties from Punjab. This is served with some mango pickle or lemon pickle.</p>
+  <p><span class = "price">-200</span><span class ="veg" style="color:green">VEG</span></p>
+</div>
+
+<div class ="rightside1" style="margin-left:240px">
+  <p style ="font-weight:bold;font-size:30px;color:red">BEST REVIEWS</p>
+  <img src="corncapsicum.png" width=100% height:50% style="border-radius:10px">
+  <p style="font-style:italic;font-family:cursive;"> Corn Capsicum Masala <span class ="align" style="margin-left:150px">Add+</span></p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">Corn capsicum masala is mildly spicy and tasty Indian curry of corn kernels & capsicum cooked in creamy onion & tomato gravy.Combination of corn and capsicum together and cook in a yummy punjabi gravy the result is simply amazing</p>
+  <p><span class = "price">-230</span><span class ="veg" style="color:green">VEG</span></p>  
+</div>
+</div>
+
+<div class ="main" id="review">CUSTOMER REVIEWS</div>
+<div class ="rev"> Below are the reviews of the customers who have tasted food from us. For more reviews visit <a href ="www.justdial.com">www.Justdial.com</a> for more reviews</div>
+<div class ="rev"> You can contact the restaurant owners for asking the legitamacy and proof of these reviews as well</div>
+
+<div class = "row1">
+
+<div class ="leftside2">
+   <p style ="font-weight:bold;font-size:30px;color:red">REGULAR WEEKEND CUSTOMERS</p>
+  <img src="regcust1.png" width=100% height:50% style="border-radius:10px">
+  <p style="font-style:italic;font-family:cursive;font-weight:bold;font-size:20px;"> Jethalal And Daya Gada</p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif">This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again. It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.The service is unmatched. The staff truly cares about your experience. Considering the quality, the price is reasonable. Ideal for those who want a romantic night out. There was also plenty of room for bigger groups.</p>
+</div>
+
+<div class ="leftside2">
+  <p style ="font-weight:bold;font-size:30px;color:red">MICHELLIN STAR CHEF VIKAS KHANNA</p>
+  <img src="vikaskhanna.png" width=80% height:30% style="border-radius:10px">
+  <p style="font-style:italic;font-family:cursive;font-weight:bold;"> He was not paid to give a good review and this can be verified by times of india food critic page as well</p>
+  <p style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif"> Amazing experience! If you thought gourmet kitchen will leave you hungry, think again. You should skip several meals before visiting this amazing restaurant. Everything is so tasty, you cannot restraint yourself from having all of the dishes. Me being a highly critical chef can say this restaurant gives the best hygiene, the ingredients are of highest quality and freshness and the kitchen of the restaurant is also absolutely neat top-notch and fair to say it is one of the best kitchens i have ever seen in my life. The chefs have hugh experience and knowledge and this can be judged from the food itself.</p>
+</div>
+
+</div>
+
+<div class ="row">
+  <h2 style="color:purple">If you want to share your experience in the restuarant you may fill the form below</h2>
+</div>
+
+<div class="container">
+  
+  <label for="fname" style="color:purple;background-color: #f2f2f2;">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+ <p style="background-color: #f2f2f2;"> <label for="email" style="color:purple;background-color: #f2f2f2;">Email-id</label>
+  <input type="text" id="email" name="emailid" placeholder="Your email-id"></p>
+
+  <label for="city" style="color:purple;background-color: #f2f2f2;">City</label>
+  <select id="city" name="city">
+    <option value="Chennai">Chennai</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Hyderabad">Hyderabad</option>
+  </select>
+
+  <label for="review" style="color:purple"></label>
+  <textarea id="review" name="review" placeholder="Write about your experience.." style="height:200px"></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+
+
+<div class ="main" id="footer"><p style="background-color: #333;font-weight:20;color:#737373">You may follow us in these social media handles as well:-<br>
+Instagram:Click on the icon-<a href="https://www.instagram.com/aditya_chari25/" target="_blank"><img alt="insta" src="instalogo.png"width=20" height="20" style="border-radius:5px;color: black;"></a><br>
+Facebook:Click on the icon-<a href="https://www.facebook.com/aditya.chari.357/" target="_blank"><img alt="fb" src="fblogo.png"width=20" height="20" style="border-radius:5px"></a><br>
+For seeing our privacy policy, click the icon-<a href="https://www.google.com/" target="_blank"><img alt="copyright" src="copyright logo.png"width=20" height="20"></a><br>
+<a href="#topi" style="color:purple;background-color: #333;font-size:10px">back to the top</a><br>
+<p style="text-align: center;font-family: monospace;background-color: #333;font-size:10px;color:#737373">Copyrighted &copy; 2020 Indian Cuisine House</p>
+</p>
+</div>
+</body>
+ </head>
+ </html>
+ 
